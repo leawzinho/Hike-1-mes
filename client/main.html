@@ -2,24 +2,38 @@
   <title>rede-hike</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<Template name="Inicio">
 
-  {{> hello}}
-  {{> info}}
-</body>
+  <a href="/">Inicio</a>
+  <a href=/sobre>Sobre</a>
+  
+  <H1>Fala, Galera!</H1>
+<P>Primeira Linha de raciocinio</P> 
+<p>Não leia o segundo pargrafo</p>
+<p><a href="www.google.com">Link</a></p>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+<template name="sobre">
+
+  <a href="/">Inicio</a>
+  <a href=/sobre>Sobre</a>
+  <H1>Sobre</H1>
+  <h2>Nossas visões</h2>
+<p>Vivamus aliquet odio at ligula ornare dignissim vitae ac augue. Suspendisse ut ex et lacus auctor auctor sit amet ac eros. Vestibulum in auctor ipsum. Proin enim magna, sodales nec placerat at, pulvinar id ex. Nam ultrices ut sem eu venenatis. Nullam et interdum diam. Pellentesque interdum maximus ex, id porta diam iaculis et. Ut quam purus, luctus sollicitudin ligula ac, pharetra ultrices metus. Sed et orci urna. Suspendisse volutpat lectus sed quam pulvinar viverra.</p>
+
+<h2>Nossos valores</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lorem a lorem finibus ultrices. Vivamus a posuere enim. Vivamus iaculis diam tincidunt orci mattis, a varius est feugiat. Donec massa odio, commodo ac ante et, ornare sodales est. Mauris a scelerisque quam, quis egestas ante. In libero mauris, fermentum vitae ultricies ac, cursus non tellus. Aenean tempor elit lacus, id malesuada ante dignissim sed. Maecenas id hendrerit tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec non viverra ante. Suspendisse iaculis nisi augue, et sodales lacus aliquam vel. Cras semper pharetra nunc, eget molestie eros luctus sit amet. Fusce odio lorem, viverra vel interdum ac, vehicula quis sem. Vivamus non urna metus. Donec viverra ligula at sem porttitor facilisis. Aenean nunc neque, rhoncus iaculis consequat nec, condimentum sodales velit.</p>
+
+</template>
+
+<template name= "cabecalho">
+  <a href="/">Inicio</a>
+  <a href=/sobre>Sobre</a>
+  
+</template name=LayoutPrincipal>
+
+<template>
+  {{> cabecalho}}
+  {{> Template.dymanic Template=main}}
 </template>
